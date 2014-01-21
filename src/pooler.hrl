@@ -9,11 +9,7 @@
 -type time_unit() :: min | sec | ms | mu.
 -type time_spec() :: {non_neg_integer(), time_unit()}.
 
--ifdef(namespaced_types).
 -type p_dict() :: dict:dict().
--else.
--type p_dict() :: dict().
--endif.
 
 -record(pool, {
           name             :: atom(),
